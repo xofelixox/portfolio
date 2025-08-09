@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Göller - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="neural-bg"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="https://www.linkedin.com/in/felix-g%C3%B6ller-27918a348/" target="_blank" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2"/>
+                    <circle cx="25" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
+                    <circle cx="75" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
+                    <circle cx="50" cy="80" r="8" fill="none" stroke="#ffff00" stroke-width="2"/>
+                    
+                    <line x1="50" y1="28" x2="25" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+                    <line x1="50" y1="28" x2="75" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+                    <line x1="25" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    <line x1="75" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    
+                    <circle cx="50" cy="50" r="5" fill="#00ffff"/>
+                    <line x1="50" y1="28" x2="50" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+                    <line x1="50" y1="55" x2="50" y2="72" stroke="#ffff00" stroke-width="1" opacity="0.6"/>
+                    <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                </svg>
+                <span class="logo-text">Felix Göller</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Felix Göller">Felix Göller</h1>
+            <p class="subtitle">Web Developer & Systems Integrator</p>
+        </div>
+        <a href="#about" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <div class="profile-img-wrapper">
+                    <div class="profile-img">
+                        <img src="profile_pic.jpg" alt="Picture of me" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3>Crafting Digital Experiences</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+                    I’m a dedicated web developer with 3 years of practical experience gained through vocational training and internships. 
+                    My focus is on creating intuitive and engaging digital applications that blend creativity with cutting-edge technology.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Alongside frontend development, I have specialized in SEO, optimizing web content to improve visibility and user engagement. 
+                    During my training, I contributed to real-world company projects and internal tools, sharpening my skills in responsive design, 
+                    interactive interfaces, and search engine optimization. 
+                    I’m passionate about continuously learning and applying new technologies to deliver exceptional user experiences.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Exp</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Collaborations</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">SEO</div>
+                        <div class="stat-label">Specialization</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="projects-grid">
+            <div class="glass-card project-card">
+                <h3 style="color: var(--primary);">E-Learning Portal</h3>
+                <p style="color: var(--text-secondary);">Internal company portal offering educational training + admin page for precise progress tracking and administrative tools</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--secondary);">Company Showcase Website</h3>
+                <p style="color: var(--text-secondary);">Comprehensive website presenting IoT product portfolio alongside company's mission, history and values</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--accent);">Authentification Tool</h3>
+                <p style="color: var(--text-secondary);">Informative tool for internal helpdesk for easier user authentification</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--primary);">Active Directory Tool</h3>
+                <p style="color: var(--text-secondary);">Simplified tool for easy updates and changes of AD values</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--secondary);">SEO Services Showcase Website</h3>
+                <p style="color: var(--text-secondary);">Mobile responsive website highlighting SEO importance and demonstrating the company's range of SEO solutions.
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--accent);">Full Server Room Setup</h3>
+                <p style="color: var(--text-secondary);">Full setup of a new server room including planning, installating, configurating and optimizing for redundancy and reliability</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills-container">
+            <div class="skill-node">
+                <span>HTML</span>
+            </div>
+            <div class="skill-node">
+                <span>CSS</span>
+            </div>
+            <div class="skill-node">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-node">
+                <span>PHP</span>
+            </div>
+            <div class="skill-node">
+                <span>C#</span>
+            </div>
+            <div class="skill-node">
+                <span>SQL</span>
+            </div>
+            <div class="skill-node">
+                <span>REST APIs</span>
+            </div>
+            <div class="skill-node">
+                <span>SEO</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 10px;">
+                    Let's build something amazing together
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/felix-g%C3%B6ller-27918a348/" aria-label="LinkedIn" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:felix.goeller@gmail.com" aria-label="Gmail">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>2025 - Felix Göller</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
